@@ -1,0 +1,81 @@
+body {
+    background-color: #2a517e;
+    padding: 20px;
+    position: relative;
+}
+
+.dropdown {
+    width: 145px;
+    border: 3px solid red;
+}
+
+.dropdown>.dropdown-btn {
+    width: 140px;
+    padding: 12px 20px;
+    background-color: #44b466;
+    color: white;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-menu,
+.sub-dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.dropdown-menu>li,
+.sub-dropdown-menu>li {
+    width: 140px;
+    padding: 12px 20px;
+    background: #eee;
+}
+
+.dropdown-menu>li:hover,
+.sub-dropdown-menu>li:hover {
+    background: #d3a7a7;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.sub-dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.dropdown>.dropdown-btn:hover {
+    background-color: #389855;
+    transition: .5s;
+}
+
+i.fa.fa-play {
+    font-size: 4px;
+    color: #ddd;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+
+.dropdown-menu,
+.sub-dropdown-menu {
+    transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -webkit-transition: all .9s ease;
+}
+
+
+/*子選單的hover*/
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover>.sub-dropdown-menu {
+    display: block;
+}
